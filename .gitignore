@@ -1,6 +1,11 @@
 # ignore ALL .log files
 *.log
 
+# Eclipse files
+.project
+.classpath
+.metadata/
+
 # ignore ALL files in ANY directory named temp
-/.metadata
+
 temp/
