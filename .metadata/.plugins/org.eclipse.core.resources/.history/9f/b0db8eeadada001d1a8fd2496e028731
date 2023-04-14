@@ -1,0 +1,34 @@
+package com.prenotazione.configuration;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
+
+import com.prenotazioni.model.Edificio;
+import com.prenotazioni.model.Postazione;
+import com.prenotazioni.model.Tipo;
+import com.prenotazioni.model.Utente;
+
+@Configuration
+public class Prenotazioni_Configuration {
+	
+	@Bean
+	@Scope("prototype")
+	public Postazione postazioneconfig(String descrizionePostazione, Tipo tipo, Integer numMaxOccupanti,
+			Edificio edificio) {
+		return new Postazione(null, descrizionePostazione, tipo, numMaxOccupanti, edificio);
+	}
+	
+	@Bean
+	@Scope("prototype")
+	public Edificio edificioconfig(String nome, String indirizzo, String città) {
+		return new Edificio(nome, indirizzo, città);
+	}
+	
+	@Bean
+	@Scope("prototype")
+	public Utente utenteconfig(String cognome, String nome, String email, Postazione postazione) {
+		return new Utente(cognome, nome, email, postazione);
+	}
+
+}

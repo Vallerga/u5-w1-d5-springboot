@@ -1,0 +1,5 @@
+package com.prenotazioni.model;
+
+public class Edificio {
+
+}

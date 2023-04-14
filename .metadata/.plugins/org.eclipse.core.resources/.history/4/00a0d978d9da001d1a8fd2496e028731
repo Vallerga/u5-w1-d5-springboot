@@ -1,0 +1,49 @@
+package com.prenotazioni.runner;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.ApplicationRunner;
+import org.springframework.stereotype.Component;
+
+import com.prenotazioni.model.Edificio;
+import com.prenotazioni.model.Postazione;
+import com.prenotazioni.model.Tipo;
+import com.prenotazioni.model.Utente;
+
+//import com.jpac_project.service.UserService;
+
+@Component
+public class Prenotazione_Runner implements ApplicationRunner {
+
+    @Autowired
+    // UserService userService;
+
+    @Override
+    public void run(ApplicationArguments args) throws Exception {
+    System.out.println("Run...");
+    test();
+    }
+    
+    public void test() {
+    System.out.println("QUESTO E' L'EDIFIZIO SELEZIONATO");
+    Edificio e = new Edificio();
+    e.setCittà("Palermo");
+    e.setIndirizzo("via ugo la malfa");
+    e.setNome("Epicode Enterprise");
+    System.out.println(e);
+    System.out.println("QUESTA è LA TUA POSTAZIONE");
+    Postazione p = new Postazione();
+    p.setDescrizionePostazione(null);
+    p.setEdificio(e);
+    p.setNumMaxOccupanti(5);
+    p.setTipo(Tipo.SALA_RIUNIONI);
+    System.out.println(p);
+    System.out.println("QUESTO E' L'UTENTE CHE HA PRENOTATO");
+    Utente u = new Utente();
+    u.setCognome("piccolo");
+    u.setEmail("francorossi@gmail.com");
+    u.setNome("franco");
+    u.setPostazione(p);
+    System.out.println(u);
+    }
+}

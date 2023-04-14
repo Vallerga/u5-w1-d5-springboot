@@ -1,0 +1,7 @@
+package com.prenotazione.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface Edifico_Dao extends CrudRepository<T, ID> {
+
+}
