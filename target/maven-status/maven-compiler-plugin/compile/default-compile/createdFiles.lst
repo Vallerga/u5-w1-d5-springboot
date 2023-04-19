@@ -1,0 +1,14 @@
+com\prenotazione\repository\Edificio_Dao.class
+com\prenotazione\model\Tipo.class
+com\prenotazione\service\Prenotazione_Service.class
+com\prenotazione\repository\Postazione_Dao.class
+com\prenotazione\model\Postazione.class
+com\prenotazione\configuration\Prenotazioni_Configuration.class
+com\prenotazione\model\Utente$UtenteBuilder.class
+com\prenotazione\model\Utente.class
+com\prenotazione\model\Edificio.class
+com\prenotazione\model\Postazione$PostazioneBuilder.class
+com\prenotazione\model\Edificio$EdificioBuilder.class
+com\prenotazione\ProvasettimanaleApplication.class
+com\prenotazione\repository\Utente_Dao.class
+com\prenotazione\runner\Prenotazione_Runner.class

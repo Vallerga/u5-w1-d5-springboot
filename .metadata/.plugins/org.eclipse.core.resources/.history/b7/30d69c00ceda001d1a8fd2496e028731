@@ -1,5 +1,0 @@
-package com.prenotazioni.model;
-
-public enum Tipo {
-
-}

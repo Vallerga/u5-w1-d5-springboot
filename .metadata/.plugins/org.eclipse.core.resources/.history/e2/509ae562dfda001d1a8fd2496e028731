@@ -1,7 +1,0 @@
-package com.prenotazione.repository;
-
-import org.springframework.data.repository.CrudRepository;
-
-public interface Utente_Dao extends CrudRepository<T, ID> {
-
-}

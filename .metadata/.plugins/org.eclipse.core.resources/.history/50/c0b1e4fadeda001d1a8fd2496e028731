@@ -1,7 +1,0 @@
-package com.prenotazione.repository;
-
-import javax.swing.tree.RowMapper;
-
-public interface Edificio_Dao extends RowMapper {
-
-}
